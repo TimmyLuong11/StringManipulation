@@ -6,8 +6,8 @@ namespace StringManipulation
     {
         static void Main(string[] args)
         {
-            string sentence = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, \nand the universe trying to build bigger and better idiots. So far, the universe is winning.";
-            string word, answer;
+            string sentence = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.";
+            string word, answer, revWord = "";
 
             Console.WriteLine(sentence);
             Console.WriteLine("\nWhat word would you like to look for in the sentence above?");
@@ -17,14 +17,19 @@ namespace StringManipulation
 
             if (sentence.Contains(word))
             {
-                for (int i = 0; i < sentence.Length; --i)
+               /* for (int i = 0; i < sentence.length; --i)
                 {
                   
-                }
+                }*/
             }
             else
             {
-                Console.WriteLine($"Sorry, I could not find your word: {word}.");
+                Console.WriteLine($"\nSorry, I could not find your word: {word}.");
+                for (int i = word.Length-1; i >= 0; --i)
+                {
+                    revWord += word[i];
+                }
+                Console.WriteLine($"{revWord}");
             }
         }
     }
