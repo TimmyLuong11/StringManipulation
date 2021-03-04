@@ -17,10 +17,7 @@ namespace StringManipulation
 
             if (sentence.Contains(word))
             {
-               /* for (int i = 0; i < sentence.length; --i)
-                {
-                  
-                }*/
+                Console.WriteLine($"\n{sentence.Replace(word, answer)}");
             }
             else
             {
@@ -29,7 +26,7 @@ namespace StringManipulation
                 {
                     revWord += word[i];
                 }
-                Console.WriteLine($"{revWord}");
+                Console.WriteLine(revWord);
             }
         }
     }
