@@ -8,7 +8,7 @@ namespace StringManipulation
         {
             //Defined Variables and the sentence for the program
             string sentence = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.";
-            string word, answer, revWord = "";
+            string word, answer, revWord = string.Empty;
 
             //Outputting the sentences to the user and asking the user what word to look for and what word to change
             Console.WriteLine(sentence);
